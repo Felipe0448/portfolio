@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+
+  font-family: "Poppins", sans-serif ;
+  margin-bottom: 25px;
+  font-size: 36px;
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh
+}
+
+.intro > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.foto-perfil {
+  width: 130px;
+  height: 125px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  border: 3px solid #708090 ;
+
+}   
+.conteudo {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10;
+    text-align: center;
+}
+
+.saudacao {
+    font-family: JetBrains Mono, monospace;
+    color:#BFC4CD;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.saudacao span {
+    color: #E7606E;
+    
+}
+
+.descricao {
+
+font-family: "Roboto Mono" sans-serif;
+font-size: 10px;
+line-height: 1.5;
+max-width: 850px;
+margin: 0 auto;
+
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tecnologias img {
+    width: 30px;
+    height: 30px;
+}
+
+.tecnologia {
+    display: flex;
+    gap: 10px;
+    background-color: #282b33;
+    padding: 10px 16px;
+    border-radius: 30px;
+}
