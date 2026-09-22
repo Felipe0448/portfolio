@@ -189,19 +189,17 @@ h1 {
 
 .servicos {
   width: 100%;
-  min-height: 100vh;
   background-color: #0d0e10;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 80px 20px;
 }
 
 .titulo-servicos {
   text-align: center;
   margin-bottom: 45px;
+  max-width: 1000px;
 }
 
 .titulo-servicos p {
@@ -225,7 +223,7 @@ h1 {
 }
 
 .servico {
-  min-height: 125px;
+  min-height: 120px;
   padding: 20px;
   border: 1px solid #24262d;
   border-radius: 8px;
@@ -249,6 +247,98 @@ h1 {
   line-height: 1.5;
 }
 
+.contatos {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #16181d;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 15px;
+}
+
+.fundo-contatos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.entre-em-contato {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.entre-em-contato p:first-child {
+  color: #8b5cf6;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.entre-em-contato h2 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.entre-em-contato p:last-child {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.lista-contatos {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 410px;
+
+  z-index: 2;
+}
+
+.contato {
+  width: 450px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-top: 20px;
+  background-color: #282b33;
+  border-radius: 8px;
+  gap: 12px;
+
+}
+
+.contato img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+
+}
+
+.contato img:last-child {
+  margin-left: auto;
+}
+
+.contato span {
+  color: #a8a8b3;
+  font-size: 16px;
+}
 
 @media (max-width: 768px) {
   .intro {
@@ -301,6 +391,41 @@ h1 {
 
   .servico {
     width: 100%;
+  }
+
+  .contatos {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .lista-contatos {
+    width: 90%;
+    max-width: 450px;
+  }
+
+  .contato {
+    width: 100%;
+  }
+
+    .entre-em-contato {
+    top: 12%;
+    width: 90%;
+  }
+
+  .entre-em-contato p:first-child {
+    color: #8b5cf6;
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .entre-em-contato h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .entre-em-contato p:last-child {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
 
