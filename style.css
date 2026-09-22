@@ -26,6 +26,7 @@ h1 {
   min-height: 100vh;
   background-color: #16181d;
   overflow-x: hidden;
+  
   /* height: 100vh;  */
 }
 
@@ -34,6 +35,20 @@ h1 {
   height: auto;
   display: block;
   object-fit: cover;
+}
+
+.intro > img.seta {
+  width: 35px;
+  height: auto;
+}
+
+.seta {
+  position: absolute;
+  bottom: 270px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 35px;
+  height: auto;
 }
 
 .img {
@@ -101,16 +116,6 @@ h1 {
   border-radius: 30px;
 }
 
-.projetos {
-  background-color: #16181d;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 100px;
-}
-
 .titulo-projetos {
   display: block;
   color: white;
@@ -151,11 +156,15 @@ h1 {
   border-radius: 12px;
 }
 
-.projeto {
+.projetos {
   font-family: "JetBrains Mono", monospace;
-  background-color: #292b34;
-  padding: 12px;
-  border-radius: 12px;
+  background-color: #16181d;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px;
 }
 
 .projeto h3 {
@@ -168,6 +177,68 @@ h1 {
 .projeto p {
   color: #a8a8b3;
   font-size: 14px;
+  line-height: 1.5;
+}
+
+.servicos {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0d0e10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 80px 20px;
+}
+
+.titulo-servicos {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.titulo-servicos p {
+  color: #e7606e;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.titulo-servicos h2 {
+  color: #e4e4e7;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.lista-servicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.servico {
+  min-height: 125px;
+  padding: 20px;
+  border: 1px solid #24262d;
+  border-radius: 8px;
+}
+
+.servico img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.servico h3 {
+  color: #e4e4e7;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.servico p {
+  color: #a8a8b3;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -194,4 +265,30 @@ h1 {
     grid-template-columns: 1fr;
     width: 90%;
   }
+
+  .projetos {
+    background-color: #16181d;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px !important;
+  }
+
+  .seta {
+    bottom: -20px;
+  }
+
+  .lista-servicos {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .servico {
+    width: 100%;
+  }
 }
+
+
+
