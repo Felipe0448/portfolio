@@ -10,6 +10,7 @@ body {
   width: 100%;
   font-family: "Roboto Mono", monospace;
   overflow-x: hidden;
+  background-color: #16181d;
 }
 
 h1 {
@@ -299,7 +300,7 @@ h1 {
 
 .lista-contatos {
   position: absolute;
-  top: 350px;
+  top: 450px;
   left: 50%;
   transform: translateX(-50%);
   
@@ -338,6 +339,19 @@ h1 {
 .contato span {
   color: #a8a8b3;
   font-size: 16px;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 768px) {
